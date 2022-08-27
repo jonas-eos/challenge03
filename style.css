@@ -35,10 +35,6 @@ label span:hover {
   color: #938f9b;
 }
 
-
-/* font-family: 'Poppins', sans-serif;
-font-family: 'Staatliches', cursive; */
-
 body::before {
   content: '';
   position: absolute;
