@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+
+  background: #C1BCCC;
+}
+
+body::before {
+  content: '';
+  background: #535971;
+
+  width: 100%;
+  height: 438px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: -1;
+}
+
+#page {
+  width: 750px;
+  margin: 140px auto;
+}
+
+header {
+  color: white;
+
+  margin-bottom: 58px;
+}
+
+header h1 {
+  font-family: 'Staatliches', cursive;
+  font-size: 48px;
+  font-weight: normal;
+
+  margin-bottom: 18px;
+}
+
+header p {
+  font-size: 20px;
+
+  width: 50%;
+}
+
+main {
+  background: #FFFFFF;
+
+  border: 0;
+  border-radius: 20px 20px 0 0;
+}
+
+form {
+  padding: 64px;
+}
+
+fieldset {
+  border: 0;
+  margin-bottom: 30px;
+}
+
+fieldset legend {
+  font-family: 'Staatliches', cursive;
+  font-size: 24px;
+  line-height: 34px;
+  width: 100%;
+
+  padding-bottom: 16px;
+  margin-bottom: 36px;
+
+  color: #535971;
+
+  border-bottom: 1px solid #E6E6F0;
+}
+
+input {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 16px;
+}
+
+.input-wrapper label {
+  margin-bottom: 8px;
+}
+
+.input-wrapper input {
+  height: 56px;
+  background: #FAFAFC;
+
+  border-radius: 8px;
+  border: 1px solid #E6E6F0;
+  padding: 16px;
+}
+
+.input-wrapper label span {
+  font-size: 12px;
+  line-height: 20px;
+
+  margin-left: 10px;
+
+  color: #C1BCCC;
+}
+
+.input-wrapper label span:hover {
+  color: #a4a0ac;
+}
+
+.col-2 {
+  display: flex;
+  gap: 22px;
+}
+
+.col-2 > div {
+  width: 100%;
+}
+
+.col-3 {
+  display: flex;
+  gap: 10px;
+
+  margin-bottom: 16px;
+}
+.col-3 > div:nth-child(1) {
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+
+  padding: 50px 70px;
+
+  height: 160px;
+  background: #535971;
+
+  border-radius: 0 0 20px 20px;
+}
+
+footer .submit {
+  font-family: 'Staatliches', cursive;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: normal;
+
+  color: white;
+  height: 55px;
+
+  background: #FF5374;
+
+  border: 0;
+  border-radius: 20px;
+}
+
+footer .submit:hover {
+  background: #ca435e;
+
+  cursor: pointer;
+}
