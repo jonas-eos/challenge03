@@ -4,37 +4,38 @@
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Mentoring</title>
+  <title>Rate your Mentorship</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div id="page">
     <header>
-      <h1>Mentoring</h1>
-      <p>Fill out the form below to schedule your mentorship.</p>
+      <h1>Rate your Mentorship</h1>
+      <p>It is time to rate your menotr, let's go?</p>
+      <img src="images/logo.svg" alt="A ballon with a rate score of 3 stars">
+      <div class="top">
+        <h2>Personal Informations</h2>
+      </div>
     </header>
 
     <main>
-      <form id="my-form">
+      <form>
         <fieldset>
-          <legend>Personal Information</legend>
 
           <div class="col-2">
             <div class="input-wrapper">
               <label for="event-name">Name</label>
-              <input required type="text" name="name" id="event-name">
+              <input type="text" name="name" id="event-name">
             </div>
 
             <div class="input-wrapper">
-              <label for="event-lastname">Last Name</label>
-              <input required type="text" name="lastname" id="event-lastname">
+              <label for="event-surname">Surname</label>
+              <input type="text" name="surname" id="event-surname">
             </div>
           </div>
 
@@ -42,69 +43,58 @@
             <label for="event-email">Email <span>(insert a valid email)</span></label>
             <input required type="email" name="email" id="event-email">
           </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Mentor Informations</legend>
 
           <div class="input-wrapper">
-            <label for="event-password">Password <span>(require min of 6 character)</span></label>
-            <input required minlength="6" type="text" name="password" id="event-password">
+            <label for="event-mentor">Select who was your mentor</label>
+            <select name="mentor" id="event-mentor">
+              <option value="joel">Joel Jota</option>
+              <option value="flavio">Flavio Augusto</option>
+              <option value="carol">Carol Barcellos</option>
+              <option value="thiago">Thiago Nigro</option>
+            </select>
+          </div>
+
+          <div class="input-wrapper">
+            <label for="event-feedback">Feedback about the mentor</label>
+            <textarea name="feedback" id="event-feedback"></textarea>
+          </div>
+
+          <div class="checkbox-wrapper">
+            <input type="checkbox" name="mentorshipok" id="event-mentoringok">
+            <label for="event-mentoringok">All my doubts were clarified during the mentoring</label>
           </div>
         </fieldset>
 
         <fieldset>
-          <legend>Mentor Information</legend>
+          <legend>Schedule next mentorship</legend>
 
-          <div class="input-wrapper">
-            <label for="event-mentor">Your mentor name <span>(first name only)</span></label>
-            <input required type="text" name="name" id="event-name">
+          <div class="col-3">
+            <div class="input-wrapper">
+              <label for="event-date">Date <span>(DD/MM/AAAA)</span></label>
+              <input required type="date" name="date" id="event-date">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-of">Of</label>
+              <input required type="time" name="of" id="event-of">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-until">Until</label>
+              <input required type="time" name="until" id="event-until">
+            </div>
           </div>
         </fieldset>
 
-        <fieldset>
-          <legend>Your Available Times</legend>
-
-          <div class="input-wrapper">
-            <h2>First Mentorship</h2>
-          </div>
-          <div class="col-3">
-            <div class="input-wrapper">
-              <label for="event-firstdate">Date <span>(DD/MM/AAA)</span></label>
-              <input required type="date" name="firstdate" id="event-firstdate">
-            </div>
-
-            <div class="input-wrapper">
-              <label for="event-firstof">Of</label>
-              <input required type="time" name="firstof" id="event-firstof">
-            </div>
-
-            <div class="input-wrapper">
-              <label for="event-firstuntil">Until</label>
-              <input required type="time" name="firstuntil" id="event-firstuntil">
-            </div>
-          </div>
-
-
-          <div class="input-wrapper">
-            <h2>Second Mentorship</h2>
-          </div>
-          <div class="col-3">
-            <div class="input-wrapper">
-              <label for="event-seconddate">Date <span>(DD/MM/AAA)</span></label>
-              <input required type="date" name="seconddate" id="event-seconddate">
-            </div>
-            <div class="input-wrapper">
-              <label for="event-secondof">Of</label>
-              <input required type="time" name="secondof" id="event-secondof">
-            </div>
-            <div class="input-wrapper">
-              <label for="event-seconduntil">Until</label>
-              <input required type="time" name="seconduntil" id="event-seconduntil">
-            </div>
-          </div>
-        </fieldset>
+        <div class="button">
+          <button>Save</button>
+        </div>
       </form>
     </main>
-    <footer>
-      <button form="my-form" class="submit">Save</button>
-    </footer>
   </div>
 </body>
 
